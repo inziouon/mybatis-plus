@@ -15,4 +15,6 @@ import java.util.List;
 public interface IActivityRulesService extends IService<ActivityRules> {
 
     List selectActivityRules();
+
+    Object testPage(Long current,Long size);
 }

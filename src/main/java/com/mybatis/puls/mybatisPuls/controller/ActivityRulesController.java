@@ -4,6 +4,7 @@ package com.mybatis.puls.mybatisPuls.controller;
 import com.mybatis.puls.mybatisPuls.service.IActivityRulesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -25,6 +26,11 @@ public class ActivityRulesController extends BaseController {
     @RequestMapping("test")
     public void text(){
         System.out.println(activityRulesService.selectActivityRules().toString());
+    }
+
+    @RequestMapping("testPage")
+    public Object testPage(@RequestParam(value = "current") Long current,@RequestParam(value = "size") Long size){
+        return activityRulesService.testPage(current,size);
     }
 }
 

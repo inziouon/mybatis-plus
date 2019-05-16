@@ -25,5 +25,8 @@
     <select id="selectActivityRules" resultMap="BaseResultMap">
         SELECT * FROM activity_rules WHERE id = 20;
     </select>
+    <select id="selectPage" resultMap="BaseResultMap">
+        SELECT * FROM activity_rules
+    </select>
 
 </mapper>
