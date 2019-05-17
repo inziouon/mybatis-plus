@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * @author: zhoujiong
- * @description: 自定义填充公共 name 字段, 与@TableField fill属性绑定
+ * @description: 自定义填充公共字段, 与@TableField fill属性绑定
  * @className: MyMetaObjectHandler
  * @date: 2019/5/16 17:40
  */
@@ -16,7 +16,11 @@ import java.util.Date;
 public class MyMetaObjectHandler implements MetaObjectHandler {
 
     /**
-     * 测试 user 表 name 字段为空自动填充
+     * @author: zhoujiong
+     * @description: 插入填充
+     * @date: 2019/5/17 9:55
+     * @param: [metaObject]
+     * @return: void
      */
     @Override
     public void insertFill(MetaObject metaObject) {
@@ -36,6 +40,13 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         }
     }
 
+    /**
+     * @author: zhoujiong
+     * @description: 更新填充
+     * @date: 2019/5/17 9:55
+     * @param: [metaObject]
+     * @return: void
+     */
     @Override
     public void updateFill(MetaObject metaObject) {
         //更新填充

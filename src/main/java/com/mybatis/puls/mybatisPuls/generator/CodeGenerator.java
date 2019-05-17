@@ -18,7 +18,7 @@ import java.util.*;
 /**
  * @author: zhoujiong
  * @description: 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
- * @className: CodeGenerator
+ * @className: CodeGenerator 代码生成器
  * @date: 2019/5/13 15:37
  */
 public class CodeGenerator {
