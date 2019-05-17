@@ -10,6 +10,7 @@ import java.util.Date;
 /**
  * @author: zhoujiong
  * @description: Entity类
+ *              KeySequence设置
  * @className: ActivityRulesController
  * @date: 2019-05-14
  */
@@ -18,12 +19,13 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("activity_rules")
+@KeySequence()
 public class ActivityRules extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 活动规则id
+     * 活动规则id，@TableId主键标志, 使用了主键设置
      */
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;

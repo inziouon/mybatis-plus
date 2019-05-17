@@ -15,7 +15,9 @@
  */
 package com.mybatis.puls.mybatisPuls.config;
 
+import com.baomidou.mybatisplus.core.config.GlobalConfig;
 import com.baomidou.mybatisplus.core.parser.ISqlParser;
+import com.baomidou.mybatisplus.extension.incrementer.DB2KeyGenerator;
 import com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
@@ -73,4 +75,20 @@ public class MybatisPluginsConfiguration {
         return performanceInterceptor;
     }
 
+
+    /**
+     * @author: zhoujiong
+     * @description: 主键设置
+     * @date: 2019/5/16 16:02
+     * @param: []
+     * @return: com.baomidou.mybatisplus.core.config.GlobalConfig.DbConfig
+     */
+    @Bean
+    public GlobalConfig.DbConfig dbConfig(){
+        GlobalConfig.DbConfig gc = new GlobalConfig.DbConfig();
+        //不需要这么配置了，自动获取数据库类型
+        //gc.setDbType(MYSQL);
+        gc.setKeyGenerator(new DB2KeyGenerator());
+        return gc;
+    }
 }

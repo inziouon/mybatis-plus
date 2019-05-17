@@ -32,5 +32,6 @@ public class ActivityRulesController extends BaseController {
     public Object testPage(@RequestParam(value = "current") Long current,@RequestParam(value = "size") Long size){
         return activityRulesService.testPage(current,size);
     }
+
 }
 
