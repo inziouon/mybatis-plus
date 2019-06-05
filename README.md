@@ -26,3 +26,4 @@ mybatis-plus与spring boot 快速开发。目前使用mybatis-plus版本为最�
 5、自动填充注解 @TableField(fill = FieldFill.INSERT) 使用
     
     建立MyMetaObjectHandler实现MetaObjectHandler并重写其中insertFill和updateFill方法
+6、注入自定义SQL

@@ -37,4 +37,18 @@ public class MybatisPulsApplicationTests extends ApplicationObjectSupport {
 		activityRulesService.save(activityRules);
 	}
 
+	/**
+	 * @author: zhoujiong
+	 * @description: 测试spring中的bean是否是单例的
+	 * @date: 2019/5/23 10:00
+	 * @param: []
+	 * @return: void
+	 */
+	@Test
+	public void springIsSingleton() {
+		ApplicationContext applicationContext = getApplicationContext();
+		System.out.println(applicationContext.getBean("activityRulesService").hashCode());
+		System.out.println(applicationContext.getBean("activityRulesService").hashCode());
+	}
+
 }

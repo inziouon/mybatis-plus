@@ -102,6 +102,9 @@ public class CodeGenerator {
                         //.setSuperEntityColumns(new String[]{"test_id"})
                         .setTableFillList(tableFillList)
                         // 自定义 mapper 父类
+                        /*
+                            此时将setSuperMapperClass 定义为 自定义mapper：DefinedMapper。即可使用DefinedMapper中自定义注入sql
+                         */
 //                         .setSuperMapperClass("com.mybatis.puls.mybatisPuls.mapper.BaseMapper")
                         // 自定义 service 父类
 //                         .setSuperServiceClass("com.mybatis.puls.mybatisPuls.service.IBaseService")
