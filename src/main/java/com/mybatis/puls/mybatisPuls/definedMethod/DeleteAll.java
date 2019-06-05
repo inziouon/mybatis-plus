@@ -12,7 +12,11 @@ import org.apache.ibatis.mapping.SqlSource;
  * @className: deleteAll
  * @date: 2019/6/5 15:38
  */
+//@Component
 public class DeleteAll extends DefinedMethod {
+
+    public DeleteAll() {
+    }
 
     @Override
     public MappedStatement injectMappedStatement(Class<?> mapperClass, Class<?> modelClass, TableInfo tableInfo) {

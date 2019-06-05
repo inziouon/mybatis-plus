@@ -8,7 +8,7 @@ package com.mybatis.puls.mybatisPuls.config;
  */
 public enum DefinedSqlMethod {
 
-    DELETE_ALL("deleteAll", "插入一条数据（选择字段插入）", "<script>\ndelete from %s\n</script>");
+    DELETE_ALL("deleteAll", "删除所有数据", "<script>\ndelete from %s\n</script>");
 
     private final String method;
     private final String desc;
