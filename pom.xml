@@ -9,24 +9,6 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mybatis.puls</groupId>
-	<artifactId>mybatisPuls</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>mybatisPuls</name>
-	<description>Demo project for Spring Boot</description>
-
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -63,12 +45,12 @@
 			<artifactId>velocity</artifactId>
 			<version>1.7</version>
 		</dependency>
+		<!-- 其他模板引擎 -->
 		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
 			<version>2.3.23</version>
 		</dependency>
-		<!-- 其他模板引擎 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId><!--mysql数据库驱动-->
@@ -90,5 +72,23 @@
 			<version>1.1.10</version>
 		</dependency>
 	</dependencies>
+	<artifactId>mybatisPuls</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mybatisPuls</name>
+
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
